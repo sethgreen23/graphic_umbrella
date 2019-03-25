@@ -1,0 +1,441 @@
+@font-face{
+    font-family:karla;
+    src: url(fonts/Karla-Regular.ttf)
+}
+@font-face{
+    font-family:my;
+    src: url(fonts/MYRIADPRO-REGULAR.OTF)
+}
+/*header*/
+html{
+    background:url(images/background.png) repeat-y top left;
+}
+.wrapper{
+    max-width:1050px;
+    margin:0 auto;
+    padding:0 10px;
+}
+.wrapper:after,.lead-banner:after,.welcome:after,.portfolio:after,.advertisers:after,.advertisers:after,#footer:after,footer:after,.footer:after,.welcome ul:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+header{
+    padding:30px 0;
+}
+#logo{
+    text-indent: -100000px;
+    width:280px;
+    height:60px;
+    background:url(images/logo.png) no-repeat top left;
+    float:left;
+}
+nav{
+    float:right;
+}
+nav h2{
+    text-indent:-100000px;
+    height:0;
+}
+nav ul{
+    list-style:none;
+}
+nav li {
+    float: left;
+    margin-left: 60px;
+}
+nav a{
+    font-family: karla;
+    font-size:14px;
+    line-height: 60px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#1c1c1c;
+}
+/*leading banner*/
+.lead-banner {
+  max-height: 420px;
+  overflow: hidden;
+  background: #9fc63f;
+  position: relative;
+  padding:50px 0;
+}
+
+
+
+#devices {
+  width: 60%;
+  float: left;
+  height: 420px;
+}
+
+.banner-description {
+    width: 40%;
+    float: right;
+    font-family: "Armata",sans-serif;
+    font-size: 30px;
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+    line-height: 1.4em;
+    text-shadow: 0.3px 0.3px 1px #000;
+}
+
+#left,#right {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: #9fc63f;
+  border-radius: 50%;
+  position: absolute;
+  border: 4px solid white;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  background-size: 20px 20px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+#left {
+  float: left;
+  top: 45%;
+  left: 10px;
+  background-image: url(http://nkmediasolutions.com/images/Icon-arrow-left-white.png);
+}
+
+#right {
+ float: right;
+  top: 45%;
+  right: 10px;
+  background-image: url(http://nkmediasolutions.com/images/Icon-arrow-right-white.png);
+}
+
+.lead-banner h2{
+    height:0;
+    text-indent: -10000px;
+}
+/*welcome*/
+
+.welcome ul{
+    list-style:none;
+    width:100%;
+    text-align:center;
+}
+.welcome li{
+    float:left;
+    width:17.5%;
+    margin-right:10%;
+
+}
+.welcome li:last-of-type{
+    margin-right:0
+}
+.welcome h2{
+    font-family: "Armata";
+    font-size:32px;
+    font-weight: normal;
+    text-align:center;
+    margin:50px 0;
+}
+.welcome h2 span{
+    color:#9fc63f;
+    
+}
+.welcome ul,.portfolio,.advertisers{
+    padding:50px 0;
+    border-top: 2px dashed #d9d9d9;
+}
+.w-service{
+    display:block;
+    width:120px;
+    height:120px;
+    margin:0 auto;
+    border-radius:50%;
+    background:#9fc63f;
+    border:20px solid white;
+    position:relative;
+}
+
+
+.w-service:before {
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    border: 1px solid #d9d9d9;
+    top: -21px;
+    left: -21px;
+    right: -21px;
+    bottom: -21px;
+    z-index: -1;
+}
+.w-service i{
+    color:white;
+    font-size:50px;
+    text-align:center;
+    line-height: 120px;
+}
+.welcome li h3{
+    font-family: "Armata";
+    font-size:30px;
+    font-weight: normal;
+    padding:20px 0;
+    text-align: center;
+}
+.w-description{
+    font-family: karla;
+    font-size:18px;
+    text-align:center;
+    font-weight: normal;
+}
+/*portfolio*/
+.portfolio h2,.advertisers h2{
+    font-family: "Armata";
+    font-size:25px;
+    position:relative;
+    top:-65px;
+    text-transform: uppercase;
+    font-weight: normal;
+    left:2%;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    width:350px;
+    background:url(images/Side.png) ;
+}
+.portfolio h2 span,.advertisers h2 span{
+    color:#9fc63f
+}
+.portfolio ul{
+    list-style:none;
+    width:100%;
+}
+.portfolio li{
+    width:49%;
+    background:white;
+    border:1px solid #ecebeb;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+.portfolio li:nth-child(even){
+    float:right;
+}
+.portfolio li:nth-child(odd){
+    margin-right: 1%;
+    float:left;
+}
+.portfolio li img{
+    float:left;
+    width:50%;
+}
+.portfolio li div{
+    padding:20px 10px;
+    width:45%;
+    float:right;
+}
+.portfolio li h3{
+    font-family: "Armata";
+    font-size:16px;
+    font-weight: normal;
+    margin-bottom:10px;
+}
+.portfolio li span{
+    font-family: karla;
+    font-weight: normal;
+    font-size:14px;
+    padding:3px;
+    color:white;
+    text-transform: capitalize;
+    background:#8eb63e;
+    margin-right: 3px;
+}
+.portfolio li p{
+    font-family: karla;
+    font-size:13px;
+    margin-top:10px;
+    line-height: 1.4em;
+}
+/*advertisers*/
+.advertisers ul{
+    list-style:none;
+}
+.advertisers li{
+    width:16.66%;
+    float:left;
+}
+.advertisers li img{
+    width: 100%;
+}
+footer{
+    padding:20px 0 0 0;
+    background:white;
+}
+footer h2{
+    height:0;
+    text-indent: -10000px;
+}
+footer ul{
+    list-style:none;
+}
+footer li{
+    width:25%;
+    overflow: hidden;
+    float:left;
+}
+.about h3,.follow h3,.archive h3,.contact h3,.news h3{
+   font-family:Armata;
+   font-size:18px;
+   font-weight: normal;
+   margin-bottom: 20px;
+   text-transform: uppercase;
+}
+.about{
+    margin-bottom:20px;
+}
+.about p{
+    font-family: karla;
+    font-size:13px;
+    line-height:1.5em;
+    width:80%;
+    margin-right:20%;
+}
+.follow span {
+    float: left;
+    width: 23px;
+    height: 22px;
+    margin-right: 5px;
+}
+.follow span:nth-child(2){
+    background: url(images/social.png) no-repeat -4px 0;
+}
+.follow span:nth-child(3){
+    background: url(images/social.png) no-repeat -30px 0;
+}
+.follow span:nth-child(4){
+    background: url(images/social.png) no-repeat -60px 0;
+}
+.follow span:nth-child(5){
+    
+    background: url(images/social.png) no-repeat -93px 0;
+}
+.follow span:nth-child(6){
+    background: url(images/social.png) no-repeat -124px 0;
+}
+.follow span:nth-child(7) {
+    background: url(images/social.png) no-repeat -155px 0;
+}
+.archive span{
+    font-family: karla;
+    font-size:13px;
+    text-transform: capitalize;
+    padding:10px 0;
+    border-bottom: 1px dashed #d9d9d9;
+    display: block;
+    width:80%;
+    margin-right:20%;
+}
+.archive span:last-of-type{
+    border-bottom: none;
+}
+
+.contact span:nth-child(2){
+    font-family: karla;
+    font-size: 13px;
+    padding:10px 0;
+    font-weight: normal;
+    display:block;
+    line-height:1.2em;
+}
+
+.contact span:nth-child(4),.contact span:nth-child(3){
+    font-family: karla;
+    font-size: 13px;
+    padding:10px 0;
+    font-weight: normal;
+    display:block;
+    line-height:1.8em;
+}
+.contact span:nth-child(2):before{
+    content:"";
+    display:block;
+    width:26px;
+    height:19px;
+    float:left;
+    margin-right: 5px;
+    background:url(images/envelope.png) no-repeat top left;
+}
+.contact span:nth-child(3):before{
+    content:"";
+    display:block;
+    width:26px;
+    height:28px;
+    float:left;
+    margin-right: 5px;
+    background:url(images/phone.png) no-repeat top left;
+}
+.contact span:nth-child(4):before{
+    content:"";
+    display:block;
+    width:26px;
+    height:29px;
+    float:left;
+    margin-right: 5px;
+    background:url(images/smart.png) no-repeat top left;
+    
+}
+
+.news input[type="text"]{
+    box-shadow: 0 4px 2px -2px #d9d9d9;
+    padding:12px 5px;
+    background:#fafafa;
+    border:none;
+    display:block;
+    margin-bottom: 15px;
+    font-family: karla;
+    font-size: 14px;
+    font-style:italic;
+    font-weight: normal;
+    width:96%;
+}
+.news input[type="submit"]{
+    float:right;
+    border:none;
+    padding:15px;
+    font-family: karla;
+    font-size:14px;
+    text-transform: uppercase;
+    color:white;
+    background:#8eb63e;
+    margin-top: 15px;
+    text-shadow: 0.3px 0.3px 1px #000;
+    margin-bottom:10px;
+}
+
+*:focus{
+    outline:none;
+}
+.footer {
+    padding:10px 0;
+    background:#202020;
+    color:white;
+}
+.footer ul{
+    float:left;
+    list-style:none;
+}
+.footer li{
+    float:left;
+    font-family: my;
+    margin-right:10px;
+    font-size:12px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.footer p{
+    float:right;
+    font-family: karla;
+    font-size:14px;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: right;
+}
